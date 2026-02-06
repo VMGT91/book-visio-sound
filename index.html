@@ -8,6 +8,7 @@
         content="VisioSound - Producciones visuales y diseño de iluminación para conciertos y eventos en vivo">
     <title>VisioSound | Producciones en Vivo</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preload" as="image" href="logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
@@ -18,7 +19,7 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-content">
-                <img src="logo.png" alt="VisioSound Logo" class="logo">
+                <img src="logo.png" alt="VisioSound Logo" class="logo" fetchpriority="high" decoding="async">
                 <ul class="nav-links">
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#proyectos">Proyectos</a></li>
@@ -32,9 +33,8 @@
     <!-- Hero Section -->
     <section id="inicio" class="hero">
         <div class="hero-background">
-            <iframe class="hero-video"
-                src="https://www.youtube.com/embed/evLVuHeO65Q?si=Pj7IZtH5QW1ucL9Q&autoplay=1&mute=1&loop=1&playlist=evLVuHeO65Q&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1"
-                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+            <iframe class="hero-video" src="https://www.youtube.com/watch?v=8RESQ4M8H9U" frameborder="0"
+                allow="autoplay; encrypted-media" allowfullscreen>
             </iframe>
             <div class="hero-overlay"></div>
         </div>
@@ -78,42 +78,43 @@
             <h2 class="section-title">Proyectos Destacados</h2>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
-                    <img src="project1.png" alt="Proyecto 1" class="portfolio-image">
+                    <img src="project1.webp" alt="Proyecto 1" class="portfolio-image" loading="lazy" decoding="async">
                     <div class="portfolio-overlay">
                         <h3>Diseño en Blender</h3>
                         <p>5 pantallas</p>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="project2.png" alt="Proyecto 2" class="portfolio-image">
+                    <img src="project2.webp" alt="Proyecto 2" class="portfolio-image" loading="lazy" decoding="async">
                     <div class="portfolio-overlay">
                         <h3>Diseño en Blender</h3>
                         <p>Proyector y lona de front</p>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="Diseño CUM.webp" alt="Proyecto 3" class="portfolio-image">
+                    <img src="Diseño CUM.webp" alt="Proyecto 3" class="portfolio-image" loading="lazy" decoding="async">
                     <div class="portfolio-overlay">
                         <h3>Diseño en Blender</h3>
                         <p>Pantalla coro y orquesta</p>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="AOT.webp" alt="Proyecto 4" class="portfolio-image">
+                    <img src="AOT.webp" alt="Proyecto 4" class="portfolio-image" loading="lazy" decoding="async">
                     <div class="portfolio-overlay">
                         <h3>Concierto Sinfónico</h3>
                         <p>Shingeki no Kyojin</p>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="Cieere Caminos del Vino 2025.webp" alt="Proyecto 5" class="portfolio-image">
+                    <img src="Cieere Caminos del Vino 2025.webp" alt="Proyecto 5" class="portfolio-image" loading="lazy"
+                        decoding="async">
                     <div class="portfolio-overlay">
                         <h3>Caminos del Vino</h3>
                         <p>Diseño de luces y pantallas</p>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="project6.png" alt="Proyecto 6" class="portfolio-image">
+                    <img src="project6.webp" alt="Proyecto 6" class="portfolio-image" loading="lazy" decoding="async">
                     <div class="portfolio-overlay">
                         <h3>Orq. Sinfonica UNCUYO</h3>
                         <p>Música de películas</p>
@@ -163,7 +164,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <img src="logo.png" alt="VisioSound Logo" class="footer-logo">
+                <img src="logo.png" alt="VisioSound Logo" class="footer-logo" loading="lazy" decoding="async">
                 <p>&copy; 2025 VisioSound. Todos los derechos reservados.</p>
             </div>
         </div>
